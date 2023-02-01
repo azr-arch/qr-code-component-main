@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300&display=swap');
+
+    *, *::before, *::after{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color:pink;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div{
+      width: 350px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+      background-color: white;
+    }
+    .qr_code{
+      width: 90%;
+      height:60%;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+
+
+    .highlight_txt,
+    .normal_txt{
+      width: 80%;
+    }
+
+    .highlight_txt{
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      margin-top: 23px;
+      line-height: 1.4 ;
+    }
+    .normal_txt{
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 15px;
+      color:hsl(212, 45%, 89%)
+    }
+
+    /* MOBILE DEVICE 375px */
+    @media (max-width:375px){
+      div{
+        width: 250px;
+        height: 400px;
+      }
+
+      .qr_code{
+        margin-top: 10px;
+      }
+
+      .highlight_txt{font-size: 12px;}
+      .normal_txt{font-size: 10px;}
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <img src="images/image-qr-code.png" alt="" class="qr_code">
+        <span class="highlight_txt">Improve your front-end skills by building projects</span>
+        <span class="normal_txt">Scan the QR code to visit frontend Mentor and take your coding skills to the next level</span>
+    </div>
+</body>
+</html>
