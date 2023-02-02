@@ -21,8 +21,7 @@
       padding: 0;
       font-family: 'Outfit', sans-serif;
       background-color:pink;
-      width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,8 +60,8 @@
     .normal_txt{
       margin-top: 15px;
       font-weight: 400;
-      font-size: 15px;
-      color:hsl(212, 45%, 89%)
+      font-size: 1em;
+      color:hsl(220, 15%, 55%)
     }
 
     /* MOBILE DEVICE 375px */
@@ -77,15 +76,17 @@
       }
 
       .highlight_txt{font-size: 12px;}
-      .normal_txt{font-size: 10px;}
+      .normal_txt{font-size: .5em;}
     }
   </style>
 </head>
 <body>
+    <main>
     <div>
-        <img src="images/image-qr-code.png" alt="" class="qr_code">
-        <span class="highlight_txt">Improve your front-end skills by building projects</span>
+        <img src="images/image-qr-code.png" alt="QR code to frontendmentor.io" class="qr_code">
+        <h1 class="highlight_txt">Improve your front-end skills by building projects</h1>
         <span class="normal_txt">Scan the QR code to visit frontend Mentor and take your coding skills to the next level</span>
     </div>
+    </main>
 </body>
 </html>
